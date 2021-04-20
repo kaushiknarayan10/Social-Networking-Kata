@@ -7,7 +7,7 @@
 
 ## Code
 
-1. Users
+1. **Users**
     - Every User is an object of the following type : 
     ```javascript
     {
@@ -21,7 +21,7 @@
   
     - Viewing all Users just returns the master array that contains all Users
 
-2. Publishes
+2. **Publishes**
     - Every Publish is an object of the following type : 
         ```javascript
         {
@@ -31,13 +31,13 @@
         ```
     - Adding a new Publish takes the text provided in the Request body for the User specified in the POST URL, filters the Users array for the particular User and adds a new Publish object to the User's `publishes` array.
 
-3. Following
+3. **Following**
     - When a Follow POST request is made, the code takes the User ID(given in the URL) and filters the Users array for the specific User and adds the Follower ID(also given in the URL) to the User's `followers` array.
 
-4. Timeline
+4. **Timeline**
     - To view the User's Timeline, the code takes the User ID (given in the URL) and filters the Users array for the specific User and returns the `publishes` array for that User.
 
-5. Wall
+5. **Wall**
     - To view the User's Wall, the code takes the User ID (given in the URL) and filters the Users array for the specific User and stores the User ID in a `usersNeeded` array. It also adds the User's Followers to the `usersNeeded` array.
     - Now that we have all the User IDs whose Publishes we need to publish, we filter the Users array for these Users and spit out the Publishes array for all the Users.
 
