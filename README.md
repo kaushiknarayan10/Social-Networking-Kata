@@ -18,14 +18,14 @@ This project uses Nodejs and Expressjs to create REST APIs to fetch and put data
   - Returns : `Created new User with ID 0`
 - GET `/users` : Returns the list of all Users in the app.
   - Returns : 
-```javascript
-{ 
-  userID : 0,
-  username : "Alice",
-  publishes : [],
-  followers : []
-}
-```
+  ```javascript
+  { 
+    userID : 0,
+    username : "Alice",
+    publishes : [],
+    followers : []
+  }
+  ```
 - POST `/publish/:userid` : Publishes the text provided in the request body for the User specified in the request parameter `userid` in the URL.
   - Request body : 
   ```javascript
