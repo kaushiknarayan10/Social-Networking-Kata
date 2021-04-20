@@ -8,7 +8,7 @@
 ## Code
 
 1. Users
-  - Every User is an object of the following type : 
+- Every User is an object of the following type : 
     ```javascript
     {
       userID : <Unique ID of the User>,
