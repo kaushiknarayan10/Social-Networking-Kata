@@ -58,6 +58,9 @@ This project uses Nodejs and Expressjs to create REST APIs to fetch and put data
 
 ## Testing and Running
 To test and run the app, clone the project in your local directory.
+
 Run `npm install` to download and install all the dependencies specified in the `package.json` file.
+
 Run `node index.js` to start the server on `http://localhost:3000`
+
 Open another terminal paralelly and run `npm test` to run all the Test Cases.
