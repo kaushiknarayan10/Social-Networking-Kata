@@ -17,7 +17,7 @@
       followers : [User IDs of all the Users that are followed]
     }
     ```
-    - Adding a User is a simple process that generates a unique User ID and creates a new User object with that ID. This User is then added to a simple arrya that contains all the Users.
+    - Adding a User is a simple process that generates a unique User ID and creates a new User object with that ID. This User is then added to a simple array that contains all the Users.
   
     - Viewing all Users just returns the master array that contains all Users
 
@@ -100,4 +100,4 @@ Run `npm install` to download and install all the dependencies specified in the 
 
 Run `node index.js` to start the server on `http://localhost:3000`
 
-Open another terminal paralelly and run `npm test` to run all the Test Cases.
+Open another terminal parallelly and run `npm test` to run all the Test Cases.
