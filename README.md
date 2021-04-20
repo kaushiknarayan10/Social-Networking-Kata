@@ -17,29 +17,29 @@
       followers : [User IDs of all the Users that are followed]
     }
     ```
-  - Adding a User is a simple process that generates a unique User ID and creates a new User object with that ID. This User is then added to a simple arrya that contains all the Users.
+    - Adding a User is a simple process that generates a unique User ID and creates a new User object with that ID. This User is then added to a simple arrya that contains all the Users.
   
-  - Viewing all Users just returns the master array that contains all Users
+    - Viewing all Users just returns the master array that contains all Users
 
 2. Publishes
-  - Every Publish is an object of the following type : 
-    ```javascript
-    {
-      publishText : 'Text that you want to publish on your Timeline',
-      publishedAt : Date and Time of when the text was Published
-    }
-    ```
-  - Adding a new Publish takes the text provided in the Request body for the User specified in the POST URL, filters the Users array for the particular User and adds a new Publish object to the User's `publishes` array.
+    - Every Publish is an object of the following type : 
+        ```javascript
+        {
+          publishText : 'Text that you want to publish on your Timeline',
+          publishedAt : Date and Time of when the text was Published
+        }
+        ```
+    - Adding a new Publish takes the text provided in the Request body for the User specified in the POST URL, filters the Users array for the particular User and adds a new Publish object to the User's `publishes` array.
 
 3. Following
-  - When a Follow POST request is made, the code takes the User ID(given in the URL) and filters the Users array for the specific User and adds the Follower ID(also given in the URL) to the User's `followers` array.
+    - When a Follow POST request is made, the code takes the User ID(given in the URL) and filters the Users array for the specific User and adds the Follower ID(also given in the URL) to the User's `followers` array.
 
 4. Timeline
-  - To view the User's Timeline, the code takes the User ID (given in the URL) and filters the Users array for the specific User and returns the `publishes` array for that User.
+    - To view the User's Timeline, the code takes the User ID (given in the URL) and filters the Users array for the specific User and returns the `publishes` array for that User.
 
 5. Wall
-  - To view the User's Wall, the code takes the User ID (given in the URL) and filters the Users array for the specific User and stores the User ID in a `usersNeeded` array. It also adds the User's Followers to the `usersNeeded` array.
-  - Now that we have all the User IDs whose Publishes we need to publish, we filter the Users array for these Users and spit out the Publishes array for all the Users.
+    - To view the User's Wall, the code takes the User ID (given in the URL) and filters the Users array for the specific User and stores the User ID in a `usersNeeded` array. It also adds the User's Followers to the `usersNeeded` array.
+    - Now that we have all the User IDs whose Publishes we need to publish, we filter the Users array for these Users and spit out the Publishes array for all the Users.
 
 
 ## Description
