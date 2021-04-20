@@ -5,6 +5,22 @@
 - Timeline
 - Following
 
+## Code
+
+- ##Users
+  - Every User is an object of the following type : 
+    ```javascript
+    {
+      userID : <Unique ID of the User>,
+      username : <Name of the created User>,
+      publishes : [List of all the Publishes made by the User]
+      followers : [User IDs of all the Users that are followed]
+    }
+    ```
+  Adding a User is a simple process that generates a unique User ID and creates a new User object with that ID. This User is then added to a simple arrya that contains all the Users.
+  
+  Viewing all Users just returns the master array that contains all Users
+
 ## Description
 This project uses Nodejs and Expressjs to create REST APIs to fetch and put data in a single session. The poroject follows TDD, test cases uses Mocha, Should and Supertest. Here's a list of the REST APIs endpoint:
 
