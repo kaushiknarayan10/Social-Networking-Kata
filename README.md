@@ -13,7 +13,7 @@ This project uses Nodejs and Expressjs to create REST APIs to fetch and put data
   ```javascript
   {
     'username' : 'Alice'
-   }
+  }
   ```
   - Returns : `Created new User with ID 0`
 - GET `/users` : Returns the list of all Users in the app.
@@ -31,5 +31,27 @@ This project uses Nodejs and Expressjs to create REST APIs to fetch and put data
   ```javascript
   {
     'text' : 'Yayy! My first Publish!!'
-  }```
+  }
+  ```
 - GET `/timeline/:userid` : Returns all the Publishes for the User specified in the request parameter `userid` in the URL.
+  - Returns : 
+  ```javascript
+  [
+    'Yayy! My first Publish!! - a few seconds ago'
+  ]
+  ```
+- POST `/follow/:userid/:followerid` : Adds `followerid` to the list of Users that `userid` follows.
+  - Returns : 
+  ```javascript
+  [
+    'Alice now follows Bob
+  ]
+   ```
+- GET `/wall/:userid` : Shows the `userid` User's Wall. The Wall will have Publishes by the User and all the User's that they Follow.
+  - Returns : 
+  ```javascript
+  [
+    'Alice - Yayy! My first Publish!! - a few seconds ago',
+    'Bob - This is a neat little app! - 1 minute ago'
+  ]
+  ```
