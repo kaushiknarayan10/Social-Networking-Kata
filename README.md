@@ -7,7 +7,7 @@
 
 ## Code
 
-- ##Users
+###Users
   - Every User is an object of the following type : 
     ```javascript
     {
