@@ -44,7 +44,7 @@ This project uses Nodejs and Expressjs to create REST APIs to fetch and put data
   - Returns : 
   ```javascript
   [
-    'Alice now follows Bob
+    'Alice now follows Bob'
   ]
    ```
 - GET `/wall/:userid` : Shows the `userid` User's Wall. The Wall will have Publishes by the User and all the User's that they Follow.
@@ -55,3 +55,9 @@ This project uses Nodejs and Expressjs to create REST APIs to fetch and put data
     'Bob - This is a neat little app! - 1 minute ago'
   ]
   ```
+
+## Testing and Running
+To test and run the app, clone the project in your local directory.
+Run `npm install` to download and install all the dependencies specified in the `package.json` file.
+Run `node index.js` to start the server on `http://localhost:3000`
+Open another terminal paralelly and run `npm test` to run all the Test Cases.
